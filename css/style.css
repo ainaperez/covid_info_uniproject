@@ -1,0 +1,382 @@
+/*Section Styles*/
+
+    body{
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        }
+
+
+    .wrapper{
+        margin-right: auto; 
+        margin-left:  auto; 
+
+        max-width: 960px; 
+
+        padding: 10px 100px 10px 100px; 
+        
+    
+    }
+
+    header{
+        background-color: #F0F1F3;
+        
+    }
+
+    main{
+        background-color:rgb(252,252,252);
+    }
+
+    footer{
+        background-color: #BBB;
+        color: rgb(252,252,252);
+        font-size: 0.70rem;
+    }
+
+
+/*General styles*/
+
+    h1{
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: #A01127;
+    
+    }
+
+    h2{
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #A01127;
+        border-bottom: 2px solid #A01127;
+        margin: 20px 0 0 0;
+    }
+
+    h3{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #77AFDF;
+        padding-top: 0.60em;
+        
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 0.85rem;
+    }
+
+    a{
+        color: #77AFDF;
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+    }
+
+    a:hover{
+        color: #A01127;
+    }
+  
+    li{
+        font-size:0.85rem;
+        margin: 0 0 5px 0;
+    }
+
+    
+
+/*Specific styles*/
+    
+    /*menú links*/
+
+    #ul-nav{
+        list-style: none;
+        padding: 0px;
+               
+    }
+
+    .ul-nav_left{
+        text-align: left;
+    }
+
+    #ul-nav>li{
+        padding: 0 5px 0 5px;
+        display: inline-block;
+        
+    }
+
+    .border_link{
+        padding: 0 10px 0 10px;
+        border-right: 2px solid #77AFDF;
+        border-left: 2px solid #77AFDF;  
+    }
+
+    #ul-nav>li>a{
+        text-decoration-line: none;
+        font-weight: bold;
+
+    }
+    
+    li.active{
+        text-decoration-line: underline;
+        text-decoration-color: #77AFDF ;
+    }
+
+
+    /*end page text*/
+
+    .end_page p{
+        font-size: 0.70rem;
+    }
+
+    .end_page_link{
+        color: #A01127; 
+        text-decoration: underline;
+        text-decoration-style: dashed;
+    }
+
+    /*footer links*/
+
+
+    #menu_footer>a{
+        color: rgb(252,252,252); 
+        text-decoration: none;
+    }
+
+    #menu_footer>a:hover{
+        color: #A01127; 
+        text-decoration: underline;
+    }
+
+    #ul-nav>li>a:hover{
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+    }
+
+/*Specific pages styles*/
+
+    /*Pàgina Index*/
+
+    #index{
+
+        max-height: 100vh;
+        max-width: 100vw;
+        background-image: url(../img/home.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        overflow-y: hidden;
+
+    }
+
+    #index_wrapper{
+        margin: auto; 
+        margin:  auto; 
+
+        max-width: 960px; 
+
+        padding: 20vh 10vw 0 10vw; 
+    }
+
+    .back_transparent{
+        background-color: transparent !important;
+    }
+
+    #logocovid{
+        width: 35%;
+        height: 35%;
+    }
+
+    #index_footer{
+        margin-top: 15vh;
+        
+    }
+
+    .index_footer_link{
+        color: #A01127;
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+        font-size: 0.70rem;
+    }
+
+/*Pàgina Mesures benestar*/
+
+    .ul_square{
+        list-style-type: square;
+    }
+    
+    .ol_number{
+    padding: 7px 0 0 0;
+    font-size: larger ;
+    }
+
+    #consells_video{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 100px 40px 100px;
+    }
+
+    iframe{
+        display: block;
+        margin: auto;
+        border: 0px;
+    }
+
+    
+
+/*Pàgina La web Salut*/
+
+    #link_black{
+        color: black;
+    }
+    #link_black:hover{
+        color: #A01127;
+    }
+
+    /*Table styles*/
+
+    table{
+        table-layout: fixed;
+        font-size: 0.85rem;
+        border-collapse: collapse;
+    }
+
+    caption{
+        text-align: right;
+        font-style: italic;
+        font-size: 0.70rem;
+        caption-side: bottom;
+        padding-top: 2px;
+
+    }
+
+    th[scope='col']{
+        background-color: rgb(252,252,252);
+        text-align: center;
+        font-size: 0.70rem;
+        font-weight: normal;
+        border-bottom: 1px solid black;
+        
+
+    }
+    th{
+        text-align: left;
+        vertical-align: middle;
+        font-weight: bolder;
+        padding: 5px 10px 5px 5px;
+        border-collapse: collapse;
+    }
+
+    td{
+        text-align: left;
+        padding: 5px 0px 5px 0px;
+        border-collapse: collapse;
+    }
+
+    .th_taula2{
+        padding: 30px 80px 30px 5px !important;
+    }
+
+    tr:nth-child(odd) {
+        background-color: rgba(119, 175, 223,0.2);
+    }
+    tr:nth-child(even) {
+        background-color: rgba(119, 175, 223,0.4);
+    }
+
+/*pàgina Cerificat*/
+
+    /*Form styles*/
+
+    button, 
+    input, 
+    select, 
+    textarea { 
+    font-family : inherit; 
+    font-size : 100%; 
+    margin-top: 10px;
+    } 
+
+    fieldset{
+        padding-bottom: 20px;
+    }
+
+    legend {
+        font-weight: bold;
+        padding: 0.2em 0.5em;
+        color: black;
+        text-align:left;
+        position: relative;
+    }
+
+    label{
+        font-size: 0.80rem;
+        display: block;
+        
+    }
+
+    input{
+        display: block;
+        margin: 5px 10px 5px 0px;
+        font-size: 0.80rem;;
+    }
+    
+    input[type='text']{
+        width: 200px;
+        
+    }
+
+    input[type='date']{
+        width: 200px;
+        font-size: 0.80rem;
+    }
+
+    input[type='number']{
+        width: 200px;
+        font-size: 0.80rem;
+    }
+
+
+    select{
+        display: block;
+        margin: 10px 10px 5px 0px;
+        width: 208px;
+        font-size: 0.80rem;   
+    }
+
+    option{
+        font-size: 0.80rem;        
+    }
+
+    .top_label{
+        float: left;
+    }
+
+    .checkbox{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .sangria{
+        margin-left: 40px;
+    }
+
+
+    button{
+        color: white;
+        font-weight: normal; 
+        background-color: #A01127; 
+        border: 1px  solid transparent;
+        border-radius: 25px;
+        padding: 5px 10px 5px 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    button:hover{
+        color: white;
+        background-color: #77AFDF ; 
+    }
+
+    #form_footer{
+        font-size: smaller;
+        margin-right: 30%;
+    }

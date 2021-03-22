@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+ <meta charset='UTF-8'>
+ <meta name='author' content='Aina Perez Serra'>
+ <meta name='description' content='Certificat autoresponsable de desplaçament per la crisi sanitària per la COVID-19'>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>El web Salut/Dades Covid</title>
+ <link rel="stylesheet" href="css/style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+<header>
+    <div class='wrapper'>
+    <a href='index.html'><img id='logocovid_petit' src='./img/infocovid.svg' alt='Logotip info Covid' ></a>
+            
+    <div id='nav-bar'>
+        <nav>
+            <ul id='ul-nav' class='ul-nav_left'>
+                <li><a href='mesures_benestar.html'>Mesures de benestar</a></li>
+                <li><a class='border_link' href='web_salut.html'>Les dades</a></li>
+                <li class='active'><a href='certificat.html'>Certificat autoresponsable</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+</header>
+
+<main>
+    <div class='wrapper'>   
+    <h1>Certificat autoresponsable de desplaçament per la crisi sanitària per la COVID-19</h1>
+    <p ><span style='background-color: #F0F1F3;'>Els camps assenyalats amb <abbr title='obligatori'>*</abbr> són obligatoris.</span></p>
+
+    <form>
+    <fieldset>
+        <legend>Dades personals</legend>
+        <div class='top_label'>
+            <label for='nom'>Nom <abbr title='obligatori'>*</abbr></label>
+            <input id='nom' type='text' aria-label="required" required minlength='2' maxlength="64" pattern="/^[a-zA-Z]+[-'a-zA-Z]*$/"> 
+        </div>
+        <div class='top_label'>				
+            <label for='cognom1'>Primer cognom <abbr title='obligatori'>*</abbr></label>
+            <input id='cognom1' type='text'  aria-label="required" required minlength='2' maxlength="128" pattern="/^[a-zA-Z]+[-'a-zA-Z]*$/">
+        </div>
+        <div class='top_label'>
+            <label for='cognom2'>Segon cognom</label> 
+            <input id='cognom2' type='text' minlength='2' maxlength="128" pattern="/^[a-zA-Z]+[-'a-zA-Z]*$/">
+        </div>
+        <br style='clear: both;'>
+        <div class='top_label'>
+            <label for='di'>Document d'identificació <abbr title='obligatori'>*</abbr></label>
+            <select id='di' aria-label="required" required size='1'>
+            <option>DNI/NIF</option>
+            <option>NIE</option>
+            <option>Passaport</option>
+        </select>
+        </div>
+        <br>
+        <input type='text'>
+    </fieldset>
+    <fieldset>
+        <legend>Trajecte</legend>
+        <div class='top_label'>	
+            <label for='data'>Data del desplaçament <abbr title='obligatori'>*</abbr></label>	
+            <input id='data' type='date' aria-label="required" required>
+        </div>
+        <br style='clear:both;'><br>
+        		
+        <label>Certifico que el meu desplaçament està relacionat amb l'activitat especificada a continuació (marqueu la casella):</label><br>
+        
+            <div class='checkbox'>
+                <input id='aliments' type='checkbox' name='desplaçament' value='aliments'>
+                <label for='aliments' >Adquisició d'aliments, productes farmacèutics i de primera necessitat.</label>
+            </div>
+            <div class='checkbox'>            
+                <input id='assistencia' type='checkbox' name='desplaçament' value='assistencia'>
+                <label for='assistencia'>Assistència a centre, servei o establiment sanitari.</label>
+            </div>
+            
+            <div class='checkbox'>
+                <input id='lloc_de_treball' type='checkbox' name='desplaçament' value='lloc_de_treball'>
+                <label for='lloc_de_treball'>Desplaçament al lloc de treball per efectuar la prestació laboral, professional o empresarial.</label>
+           </div>
+            
+            <div class='checkbox'>	 
+                <input id='residencia' type='checkbox' name='desplaçament' value='residencia'>
+                <label for='residencia'>Retorn al lloc de residència habitual.</label>
+            </div> 
+            	
+            <div class='checkbox'>
+                <input id='ajuda' type='checkbox' name='desplaçament' value='ajuda'>
+                <label for='ajuda'>Assistència o atenció a persones grans, menors d'edat, dependents, persones amb discapacitat o persones especialment vulnerables.</label>
+           </div>	
+            
+            <div class='checkbox'> 
+                <input id='financera' type='checkbox' name='desplaçament' value='financera'>
+                <label for='financera'>Desplaçament a entitat financera o d'assegurança.</label>
+            </div>
+            
+            <div class='checkbox'>
+                <input id='força_major' type='checkbox' name='desplaçament' value='força_major'>
+                <label for='força_major'>Causa de força major o situació de necessitat.</label>
+            </div>
+            <div class='checkbox'> 
+            <input id='infants' type='checkbox' name='infants' value='infants'>
+            <label for='infants'>Sortida d'infants i adolescents.</label>
+            </div>
+                
+                <label class='sangria'>Nombre de menors:</label> 
+                <div class='checkbox sangria'>
+                    <input id='menors1' type='radio' name='menors' value='menors1'>
+                    <label for='menors1'>1</label></div>
+                
+                <div class='checkbox sangria'>
+                    <input id='menors2' type='radio' name='menors' value='menors2'>
+                    <label for='menors2'>2</label></div>
+                	
+                <div class='checkbox sangria'>
+                    <input id='menors3' type='radio' name='menors' value='menors3'>
+                    <label for='menors3'>3</label>
+                </div>
+                
+            <div class='checkbox'>
+            <input id='dependents' type='checkbox' name='desplaçament' value='dependents'>
+            <label for='dependents'>Sortida passejos majors de 70 anys i dependents.</label></div>
+            
+            <div class='checkbox'>
+                <input id='activitat' type='checkbox' name='desplaçament' value='activitat'>	
+                <label for='activitat'>Sortida activitat física i passeig a partir de 14 anys.</label></div>
+        	 		    	
+    </fieldset>
+    <fieldset>
+    <legend>Adreça d'origen</legend> 
+    <div class='top_label'>
+        <label for='postalorigen'>Codi postal <abbr title='obligatori'>*</abbr></label>
+        <input id='postalorigen' type='number' aria-label="required" required min='00000' max='99999'>
+    </div>  	
+    <div class='top_label'>
+        <label for='provinciaorigen'>Província <abbr title='obligatori'>*</abbr></label> 		
+        <input id='provinciaorigen' type='text' aria-label="required" required>
+    </div>
+    <div class='top_label'>
+        <label for='comarcaorigen'>Comarca</label> 	
+        <input id='comarcaorigen' type='text' title='required' aria-label="required" required>
+    </div>
+    <br style='clear:both;'>	
+    <div class='top_label'>			 		
+        <label for='municipiorigen'>Municipi <abbr title='obligatori'>*</abbr></label>
+        <input id='municipiorigen' type='text' aria-label="required" required>
+    </div>
+    </fieldset>	
+    <fieldset>
+    <legend>Adreça de destinació</legend>
+    <div class='top_label'>
+        <label for='postaldestinacio'>Codi postal <abbr title='obligatori'>*</abbr></label>
+        <input id='postaldestinacio' type='number' aria-label="required" required min='00000' max='99999'>
+    </div>  		
+    <div class='top_label'>			 				
+        <label for='provinciadestinacio'>Província <abbr title='obligatori'>*</abbr></label> 	
+        <input id='provinciadestinacio' type='text' aria-label="required" required>
+    </div>
+    <div class='top_label'>
+        <label for='comarcadestinacio'>Comarca</label> 	
+        <input id='comarcadestinacio' type='text' title='required' aria-label="required" required>
+    </div>
+    <br style='clear:both;'>	
+    <div class='top_label'>
+        <label for='municipidestinacio'>Municipi <abbr title='obligatori'>*</abbr></label>
+        <input id='municipidestinacio' type='text' aria-label="required" required>
+    </div>
+    </fieldset>
+    <div id='form_footer'>
+    <p><strong>Informació bàsica relativa a la protecció de dades</strong></p>
+    <p>L’informem que les dades recollides seran tractades per la Direcció General d’Administració Digital, del Departament de Polítiques Digitals i Administració Pública de la Generalitat de Catalunya, per tal de donar-li suport en l’elaboració de la declaració autoresponsable. Podrà exercir els drets d’accés, rectificació, supressió, oposició al tractament i sol·licitud de limitació de les dades mitjançant el següent enllaç: <a href='http://politiquesdigitals.gencat.cat/ca/pgov_departament/proteccio-de-dades/drets-de-les-persones-interessades/'>http://politiquesdigitals.gencat.cat/ca/pgov_departament/proteccio-de-dades/drets-de-les-persones-interessades/</a></p>
+    </div>
+
+    <button type='submit'>Generar certificat</button>
+    </form>
+    <div class='end_page'>
+    <p>Font: <a class='end_page_link' href='https://certificatdes.confinapp.cat/'>Certificat autoresponsable de desplaçament per la crisi sanitària per la COVID-19</a></p>
+    </div>
+    </div>
+</main>
+<footer>
+<div class='wrapper end_page'>
+    <p>2020 &#169; Aina Pérez Serra</p>
+    <div id='menu_footer'>
+        <a href='#'>Avís legal</a>
+        <a href='#'>Política de privacitat</a>
+    </div>
+</div>
+</footer>
+   
+</body>
+</html>
